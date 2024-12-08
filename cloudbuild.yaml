@@ -3,26 +3,24 @@ steps:
   - name: 'gcr.io/cloud-builders/git'
     args: ['clone', 'https://github.com/sanjay3889/cicd-service.git', 'myrepo']
 
-
   # Step 2: Execute SQL script in BigQuery using input redirection
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: 'bash'
     args:
       - '-c'
       - |
-        # Ensure project_id is quoted properly
-        ENVIRONMENT="${_ENVIRONMENT:-dv}"
-        if [ "$ENVIRONMENT" == "dv" ]; then
-          PROJECT_ID="dv-project-id"  # Replace with actual dv project ID
-        elif [ "$ENVIRONMENT" == "qa" ]; then
-          PROJECT_ID="qwiklabs-gcp-00-bdf5952fd1f3"  # Replace with actual qa project ID
-        else
-          echo "Unknown environment: $ENVIRONMENT"
+        # Get project_id from the build substitution
+        PROJECT_ID="${_PROJECT_ID}"
+        
+        # Ensure project_id is provided
+        if [ -z "$PROJECT_ID" ]; then
+          echo "Error: PROJECT_ID is required."
           exit 1
         fi
-        # PROJECT_ID="qwiklabs-gcp-00-bdf5952fd1f3"
+        
         echo "Running query on project: $PROJECT_ID"
-        # Run the bq query using input redirection to pass the SQL content
+        
+        # Run the BigQuery query using input redirection
         bq query --use_legacy_sql=false --project_id="$PROJECT_ID" --format=none < myrepo/missing.sql
 
 options:
