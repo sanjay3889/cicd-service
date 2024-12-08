@@ -1,9 +1,18 @@
 steps:
 # Step 1: Clone the GitHub repository
 - name: 'gcr.io/cloud-builders/git'
-  args: ['clone', 'https://github.com/sanjay3889/cicd-service.git', 'repo']
+  args: ['clone', 'https://your-pat@github.com/sanjay3889/cicd-service.git', 'repo']
 
-# Step 3: Execute SQL script in BigQuery
+# Step 2: Change to the cloned repository directory
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  args: ['-c', 'cd repo']
+
+# Step 3: Authenticate to BigQuery
+- name: 'gcr.io/cloud-builders/gcloud'
+  args: ['auth', 'application-default', 'login']
+
+# Step 4: Execute SQL script in BigQuery
 - name: 'gcr.io/cloud-builders/gcloud'
   args:
   - 'bq'
@@ -12,5 +21,7 @@ steps:
   - '--project=qwiklabs-gcp-04-ee6c0d22a945'
   - '--format=none'
   - '$(cat repo/missing.sql)'
+
+# Specify the logging option
 options:
   logging: CLOUD_LOGGING_ONLY
