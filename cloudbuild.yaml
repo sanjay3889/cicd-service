@@ -23,7 +23,7 @@ steps:
       - '--use_legacy_sql=false'
       - '--project_id=qwiklabs-gcp-03-19de5989b72a'
       - '--format=none'
-    stdin: 'myrepo/missing.sql'
+      - '$(cat myrepo/missing.sql)'
 
 options:
   logging: CLOUD_LOGGING_ONLY
