@@ -1,0 +1,12 @@
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone','https://github.com/sanjay3889/cicd-service.git']
+  
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - 'bq'
+  - 'query'
+  - '--use_legacy_sql=false'
+  - '--project=$PROJECT_ID'
+  - '--format=none'
+  - '$(cat missing.sql)'
+  
