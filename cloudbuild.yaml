@@ -12,4 +12,5 @@ steps:
   - '--project=qwiklabs-gcp-04-ee6c0d22a945'
   - '--format=none'
   - '$(cat missing.sql)'
-
+options:
+  logging: CLOUD_LOGGING_ONLY
