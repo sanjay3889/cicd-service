@@ -1,3 +1,3 @@
-create or replace view `qwiklabs-gcp-04-ee6c0d22a945.cds.missing`
+create or replace view `qwiklabs-gcp-03-19de5989b72a.cds.missing`
   as
 select current_date()
