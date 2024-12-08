@@ -5,9 +5,9 @@ steps:
   entrypoint: 'bash'
   args: ['-c', 'cd myrepo']
 
-# Step 2: Authenticate to BigQuery
-- name: 'gcr.io/cloud-builders/gcloud'
-  args: ['auth', 'application-default', 'login']
+# # Step 2: Authenticate to BigQuery
+# - name: 'gcr.io/cloud-builders/gcloud'
+#   args: ['auth', 'application-default', 'login']
 
 # Step 3: Execute SQL script in BigQuery
 - name: 'gcr.io/cloud-builders/gcloud'
