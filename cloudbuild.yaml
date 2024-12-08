@@ -1,7 +1,7 @@
 steps:
 # Step 1: Clone the GitHub repository
 - name: 'gcr.io/cloud-builders/git'
-  args: ['clone', 'https://your-pat@github.com/sanjay3889/cicd-service.git', 'repo']
+  args: ['clone', 'https://github.com/sanjay3889/cicd-service.git', 'repo']
 
 # Step 2: Change to the cloned repository directory
 - name: 'gcr.io/cloud-builders/gcloud'
