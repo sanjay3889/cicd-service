@@ -22,7 +22,7 @@ steps:
       - '-c'
       - |
         # Ensure project_id is quoted properly
-        PROJECT_ID="qwiklabs-gcp-03-19de5989b72a"
+        PROJECT_ID="qwiklabs-gcp-00-bdf5952fd1f3"
         echo "Running query on project: $PROJECT_ID"
         # Run the bq query using input redirection to pass the SQL content
         bq query --use_legacy_sql=false --project_id="$PROJECT_ID" --format=none < myrepo/missing.sql
