@@ -2,7 +2,7 @@ steps:
   # Step 1: Clone the GitHub repository
   - name: 'gcr.io/cloud-builders/git'
     args: ['clone', 'https://github.com/sanjay3889/cicd-service.git', 'myrepo']
-    
+
   # Step 2: Check if the SQL file exists (for debugging)
   - name: 'gcr.io/cloud-builders/gcloud'
     entrypoint: 'bash'
@@ -14,18 +14,18 @@ steps:
         else
           echo "SQL file does not exist."
         fi
-        
-  # Step 3: Execute SQL script in BigQuery
-  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    args:
-      - 'bq'
-      - 'query'
-      - '--use_legacy_sql=false'
-      - '--project_id=qwiklabs-gcp-03-19de5989b72a'
-      # - '--format=none'
-      - '$(cat myrepo/missing.sql)'
 
+  # Step 3: Execute SQL script in BigQuery using input redirection
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        # Ensure project_id is quoted properly
+        PROJECT_ID="qwiklabs-gcp-03-19de5989b72a"
+        echo "Running query on project: $PROJECT_ID"
+        # Run the bq query using input redirection to pass the SQL content
+        bq query --use_legacy_sql=false --project_id="$PROJECT_ID" --format=none < myrepo/missing.sql
 
 options:
   logging: CLOUD_LOGGING_ONLY
-
