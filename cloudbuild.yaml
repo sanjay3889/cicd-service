@@ -17,6 +17,7 @@ steps:
           echo "Error: PROJECT_ID is required."
           exit 1
         fi
+
         
         echo "Running query on project: $PROJECT_ID"
         
