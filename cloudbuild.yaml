@@ -21,13 +21,10 @@ steps:
       - 'bq'
       - 'query'
       - '--use_legacy_sql=false'
-      # - '--project_id=$PROJECT_ID'
+      - '--project_id=qwiklabs-gcp-03-19de5989b72a'
       # - '--format=none'
       - '$(cat myrepo/missing.sql)'
 
-# substitutions:
-#     #GCP Specific configuration. Please DON'T change anything
-#     PROJECT_ID: qwiklabs-gcp-03-19de5989b72a
 
 options:
   logging: CLOUD_LOGGING_ONLY
