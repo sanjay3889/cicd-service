@@ -21,7 +21,7 @@ steps:
       - 'bq'
       - 'query'
       - '--use_legacy_sql=false'
-      - '--project_id=qwiklabs-gcp-03-19de5989b72a'
+      - '--project_id=`qwiklabs-gcp-03-19de5989b72a`'
       - '--format=none'
       - '$(cat myrepo/missing.sql)'
 
