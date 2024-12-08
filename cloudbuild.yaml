@@ -6,7 +6,7 @@
   - 'bq'
   - 'query'
   - '--use_legacy_sql=false'
-  - '--project=$PROJECT_ID'
+  - '--project=qwiklabs-gcp-04-ee6c0d22a945'
   - '--format=none'
   - '$(cat missing.sql)'
   
