@@ -11,6 +11,7 @@ steps:
       - '-c'
       - |
         # Ensure project_id is quoted properly
+        ENVIRONMENT="${_ENVIRONMENT:-dv}"
         if [ "$ENVIRONMENT" == "dv" ]; then
           PROJECT_ID="dv-project-id"  # Replace with actual dv project ID
         elif [ "$ENVIRONMENT" == "qa" ]; then
