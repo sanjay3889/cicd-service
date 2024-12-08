@@ -21,7 +21,7 @@ steps:
       - 'bq'
       - 'query'
       - '--use_legacy_sql=false'
-      - '--project_id=${PROJECT_ID}'
+      - '--project_id=$PROJECT_ID'
       - '--format=none'
       - '$(cat myrepo/missing.sql)'
 
