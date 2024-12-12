@@ -7,33 +7,29 @@ WITH params AS (
 ),
 
 {% set parent_data = ({
-    'vw_dim_product': ['{prj_spmena_apac}.{dst_cds_sellout_eu}.{vw_dim_product}', 'product_code'],
-    'vw_dim_point_of_sales': ['{prj_spmena_apac}.{dst_cds_sellout_eu}.{vw_dim_point_of_sales}', 'point_of_sale_code']
+    'vw_dim_product': ['{prj_spmena_apac}.{dst_cds_sellout_eu}.{vw_dim_product}', 'product_code', 'dim.{{source_column}}'],
+    'vw_dim_point_of_sales': ['{prj_spmena_apac}.{dst_cds_sellout_eu}.{vw_dim_point_of_sales}', 'point_of_sale_code', 'dim.{{source_column}}'],
+    'vw_fact_sellout': [null, null, 'fct.{{source_column}}']
 })
 %}
 
 src_data AS (
     {% set parent_table = parent_data[source_table][0] %}
-    {% set parent_column = parent_data[source_table][1] %}
+    {% set parent_col = parent_data[source_table][1] %}
+    {% set parent_col2 = parent_data[source_table][2] %}
     
     SELECT fct.division_code
          , fct.market_code
          , CAST(EXTRACT(YEAR FROM sellout_date) AS STRING) AS sellout_year
          , fct.point_of_sale_code
-         {% if {{source_table}} != 'vw_fact_sellout' %}
-         , dim.{{source_column}} as source_column
-         {% else %}
-         , {{source_column}} as source_column
-         {{endif}}
+         , {{parent_col2}} as source_column
          , {{val_column}} as val_column
+         , {{source_table}} as source_table
       FROM `{prj_spmena_apac}.{dst_cds_sellout_eu}.{vw_fact_sellout}` AS fct
-      {% if {{source_table}} != 'vw_fact_sellout' %}
+      {% if source_table != 'vw_fact_sellout' %}
       LEFT
       JOIN `{{ parent_table }}` AS dim
-      {% if {{source_table}} == 'vw_dim_product' %}
-        ON (fct.product_code = dim.product_code)
-      {% elif {{source_table}} == 'vw_dim_point_of_sales' %}
-        ON (fct.point_of_sale_code = dim.point_of_sale_code)
+        ON fct.{{parent_col}} = dim.{{parent_col}}
       {% endif %}
 ),
 
@@ -95,6 +91,3 @@ final_cte as (
 )
 
 select * from final_cte;
-
-
-"ERROR:root:400 Syntax error: Unexpected identifier "sellout_completeness_summary_main" at [1:1]; reason: invalidQuery, location: query, message: Syntax error: Unexpected identifier "sellout_completeness_summary_main" at [1:1]  Location: EU Job ID: 5c01af47-5836-4699-8059-52cbf5785e91 "
