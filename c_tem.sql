@@ -28,9 +28,10 @@ with params as (
 %}
 
 src_data AS (
-    {% set parent_table = parent_data[source_column][0] %}    --join table
-    {% set parent_col = parent_data[source_column][1] %}      --joining column
-    {% set parent_col2 = parent_data[source_column][2] %}     --source column
+    {% set table_data = parent_data[source_table] %}
+    {% set parent_table = table_data[source_column][0] %}    --join table
+    {% set parent_col = table_data[source_column][1] %}      --joining column
+    {% set parent_col2 = table_data[source_column][2] %}     --source column
     
     SELECT fct.division_code
          , fct.market_code
@@ -75,7 +76,7 @@ cols_calculated AS (
                       THEN 1 ELSE NULL END) AS invalid_rows
          , COUNT(1) AS total_rows
     FROM src_data_pos_hierarchy
-    GROUP BY all
+    GROUP BY 1,2,3,4,5,6
 ),
 
 final_cte as (
@@ -104,4 +105,3 @@ final_cte as (
 )
 
 select * from final_cte;
-
