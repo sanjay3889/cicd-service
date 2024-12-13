@@ -1,22 +1,36 @@
 INSERT INTO `{prj_data_quality}.{dst_data_quality}.{tbl_dq_run_result}`
 (dq_id, run_timestamp, attribute_arr, dq_score, invalid_rows, total_rows, invalid_value, total_value, param_date)
-WITH params AS (
-    SELECT cast(@DQ_ID AS STRING) AS dq_id,
-           cast(@RUN_TIMESTAMP AS TIMESTAMP) AS run_timestamp,
-           cast(@PARAM_DATE AS STRING) AS param_date
+with params as (
+    SELECT cast(@DQ_ID         as STRING)    as dq_id
+         , cast(@RUN_TIMESTAMP as TIMESTAMP) as run_timestamp
+         , cast(@PARAM_DATE    as STRING)    as param_date
 ),
 
 {% set parent_data = ({
-    'vw_dim_product': ['{prj_spmena_apac}.{dst_cds_sellout_eu}.{vw_dim_product}', 'product_code', 'dim.{{source_column}}'],
-    'vw_dim_point_of_sales': ['{prj_spmena_apac}.{dst_cds_sellout_eu}.{vw_dim_point_of_sales}', 'point_of_sale_code', 'dim.{{source_column}}'],
-    'vw_fact_sellout': [null, null, 'fct.{{source_column}}']
+  'vw_fact_sellout'  : {
+    'market_code'                   : [null, null, 'fct.market_code'],
+    'order_number'                  : [null, null, 'fct.order_number'],
+    'data_source'                   : [null, null, 'fct.data_source']
+    },
+
+    'vw_dim_product'  : {
+    'product_name'                  : ['{prj_spmena_apac}.{dst_cds_sellout_eu}.{vw_dim_product}', 'product_code', 'dim.product_name'],
+    'signature_name'                : ['{prj_spmena_apac}.{dst_cds_sellout_eu}.{vw_dim_product}', 'product_code', 'dim.signature_name'],
+    'brand_name'                    : ['{prj_spmena_apac}.{dst_cds_sellout_eu}.{vw_dim_product}', 'product_code', 'dim.brand_name'],
+    'material_group_code'           : ['{prj_spmena_apac}.{dst_cds_sellout_eu}.{vw_dim_product}', 'product_code', 'dim.material_group_code']
+    },
+
+    'vw_dim_point_of_sales'  : {
+    'point_of_sale_code'            : ['{prj_spmena_apac}.{dst_cds_sellout_eu}.{vw_dim_point_of_sales}', 'point_of_sale_code', 'dim.point_of_sale_code'],
+    'channel_level2'                : ['{prj_spmena_apac}.{dst_cds_sellout_eu}.{vw_dim_point_of_sales}', 'point_of_sale_code', 'dim.channel_level2'],
+    'channel_level1'                : ['{prj_spmena_apac}.{dst_cds_sellout_eu}.{vw_dim_point_of_sales}', 'point_of_sale_code', 'dim.channel_level1']
 })
 %}
 
 src_data AS (
-    {% set parent_table = parent_data[source_table][0] %}
-    {% set parent_col = parent_data[source_table][1] %}
-    {% set parent_col2 = parent_data[source_table][2] %}
+    {% set parent_table = parent_data[source_column][0] %}    --join table
+    {% set parent_col = parent_data[source_column][1] %}      --joining column
+    {% set parent_col2 = parent_data[source_column][2] %}     --source column
     
     SELECT fct.division_code
          , fct.market_code
@@ -24,9 +38,8 @@ src_data AS (
          , fct.point_of_sale_code
          , {{parent_col2}} as source_column
          , {{val_column}} as val_column
-         , {{source_table}} as source_table
       FROM `{prj_spmena_apac}.{dst_cds_sellout_eu}.{vw_fact_sellout}` AS fct
-      {% if source_table != 'vw_fact_sellout' %}
+      {% if 'dim' in parent_col2 %}
       LEFT
       JOIN `{{ parent_table }}` AS dim
         ON fct.{{parent_col}} = dim.{{parent_col}}
@@ -91,3 +104,4 @@ final_cte as (
 )
 
 select * from final_cte;
+
