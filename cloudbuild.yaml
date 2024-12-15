@@ -1,9 +1,38 @@
 steps:
-  # Step 1: Clone the GitHub repository
-  - name: 'gcr.io/cloud-builders/git'
-    args: ['clone', 'https://github.com/sanjay3889/cicd-service.git', 'myrepo']
+  #step 1 :Downloading ssh key from GCS
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    # id: 'download-ssh-key'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        echo 'downloading sshkey from gcs'
+        gsutil cp gs://gcs-onedataraw-sdds-dv/dq/SPMENA/ssh-keys/id_rsa /root/.ssh/id_rsa
+        chmod 600 /root/.ssh/id_rsa
 
-  # Step 2: Execute SQL script in BigQuery using input redirection
+  #step 2 :Configure ssh key for github
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    # id: 'configure-ssh-key'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        echo 'setting up ssh-key for git'
+        mkdir -p /root/.ssh
+        ssh-keyscan github.com >> /root/.ssh/known_hosts
+  
+  # Step 3: Clone the GitHub repository
+  - name: 'alpine/git'
+    entrypoint: 'sh'
+    args:
+      - '-c'
+      - |
+        echo 'cloning the github repo'
+        GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no" git clone
+        git clone git@github.com:apmena-data-analytics/spmena-data-quality-framework.git /myrepo
+  # - name: 'gcr.io/cloud-builders/git'
+
+  # Step 4: Execute SQL script in BigQuery using input redirection
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: 'bash'
     args:
@@ -22,7 +51,7 @@ steps:
         echo "Running query on project: $PROJECT_ID"
         
         # Run the BigQuery query using input redirection
-        bq query --use_legacy_sql=false --project_id="$PROJECT_ID" --format=none < myrepo/missing.sql
+        bq query --use_legacy_sql=false --project_id="$PROJECT_ID" --format=none < myrepo/tempCICD/missing.sql
 
 options:
   logging: CLOUD_LOGGING_ONLY
