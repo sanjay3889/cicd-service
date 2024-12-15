@@ -1,0 +1,57 @@
+#"ERROR: build step 0 "gcr.io/google.com/cloudsdktool/cloud-sdk" failed: step exited with non-zero status: 1"
+steps:
+  #step 1 :Downloading ssh key from GCS
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    # id: 'download-ssh-key'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        echo 'downloading sshkey from gcs'
+        gsutil cp gs://gcs-one-dv/dq/SPA/ssh-keys/id_rsa /root/.ssh/id_rsa
+        chmod 600 /root/.ssh/id_rsa
+
+  #step 2 :Configure ssh key for github
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    # id: 'configure-ssh-key'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        echo 'setting up ssh-key for git'
+        mkdir -p /root/.ssh
+        ssh-keyscan github.com >> /root/.ssh/known_hosts
+  
+  # Step 3: Clone the GitHub repository
+  - name: 'alpine/git'
+    entrypoint: 'sh'
+    args:
+      - '-c'
+      - |
+        echo 'cloning the github repo'
+        git clone git@github.com:apena-dat/spena-framework.git /myrepo
+  # - name: 'gcr.io/cloud-builders/git'
+
+  # Step 4: Execute SQL script in BigQuery using input redirection
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        # Get project_id from the build substitution
+        PROJECT_ID="${_PROJECT_ID}"
+        
+        # Ensure project_id is provided
+        if [ -z "$PROJECT_ID" ]; then
+          echo "Error: PROJECT_ID is required."
+          exit 1
+        fi
+
+        
+        echo "Running query on project: $PROJECT_ID"
+        
+        # Run the BigQuery query using input redirection
+        bq query --use_legacy_sql=false --project_id="$PROJECT_ID" --format=none < myrepo/tempCICD/missing.sql
+
+options:
+  logging: CLOUD_LOGGING_ONLY
