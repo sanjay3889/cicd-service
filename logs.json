@@ -1,0 +1,1762 @@
+[
+  {
+    "textPayload": "starting build \"a99d785e-50cf-42f1-b451-6891a47b144a\"\n",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-0",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:18.535824482Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "MAIN",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:19.581331088Z"
+  },
+  {
+    "textPayload": "FETCHSOURCE",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-1",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:18.535847410Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "MAIN",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:19.581331088Z"
+  },
+  {
+    "textPayload": "hint: Using 'master' as the name for the initial branch. This default branch name",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-2",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:19.086567043Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "gsutil:STDERR",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:19.581331088Z"
+  },
+  {
+    "textPayload": "hint: is subject to change. To configure the initial branch name to use in all",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-3",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:19.086582525Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "gsutil:STDERR",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:19.581331088Z"
+  },
+  {
+    "textPayload": "hint: of your new repositories, which will suppress this warning, call:",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-4",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:19.086584630Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "gsutil:STDERR",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:19.581331088Z"
+  },
+  {
+    "textPayload": "hint:",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-5",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:19.086586838Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "gsutil:STDERR"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:19.581331088Z"
+  },
+  {
+    "textPayload": "hint: \tgit config --global init.defaultBranch <name>",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-6",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:19.086589155Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "gsutil:STDERR",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:19.581331088Z"
+  },
+  {
+    "textPayload": "hint:",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-7",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:19.086602389Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "gsutil:STDERR"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:19.581331088Z"
+  },
+  {
+    "textPayload": "hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-8",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:19.086604245Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "gsutil:STDERR",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:19.581331088Z"
+  },
+  {
+    "textPayload": "hint: 'development'. The just-created branch can be renamed via this command:",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-9",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:19.086605760Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "gsutil:STDERR"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:19.581331088Z"
+  },
+  {
+    "textPayload": "hint:",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-10",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:19.086607717Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "gsutil:STDERR",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:19.581331088Z"
+  },
+  {
+    "textPayload": "hint: \tgit branch -m <name>",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-11",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:19.086626522Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "gsutil:STDERR",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:19.581331088Z"
+  },
+  {
+    "textPayload": "Initialized empty Git repository in /workspace/.git/",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-12",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:19.090635367Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "gsutil:STDOUT"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:19.581331088Z"
+  },
+  {
+    "textPayload": "From https://github.com/apmena-data-analytics/spmena-data-quality-framework",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-13",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:23.299757042Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "gsutil:STDERR",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:23.554063639Z"
+  },
+  {
+    "textPayload": " * branch            34deca6916a3f6a8d5989aca32747c2632b0e91a -> FETCH_HEAD",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-14",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:23.299795490Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "gsutil:STDERR"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:23.554063639Z"
+  },
+  {
+    "textPayload": "HEAD is now at 34deca6 Update cloudbuild.yaml",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-15",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:23.317936532Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "gsutil:STDOUT"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:23.554063639Z"
+  },
+  {
+    "textPayload": "BUILD",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-16",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:23.502975404Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "MAIN"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:23.554063639Z"
+  },
+  {
+    "textPayload": "Starting Step #0",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-17",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:24.138495870Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "MAIN"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:24.552930121Z"
+  },
+  {
+    "textPayload": "Step #0: Pulling image: gcr.io/google.com/cloudsdktool/cloud-sdk",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-18",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:24.139203188Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:24.552930121Z"
+  },
+  {
+    "textPayload": "Step #0: Using default tag: latest",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-19",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:24.846711324Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: latest: Pulling from google.com/cloudsdktool/cloud-sdk",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-20",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.037307020Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #0"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: 908b9e25258b: Already exists",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-21",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.040090537Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #0"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: 5cbc57c1ed03: Pulling fs layer",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-22",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.049827291Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #0"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: 34dceaf65b1a: Pulling fs layer",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-23",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.049836805Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: bce1c0b85d43: Pulling fs layer",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-24",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.049838243Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: da0c1f0040a3: Pulling fs layer",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-25",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.049838745Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: bba8a7a402ca: Pulling fs layer",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-26",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.049839347Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: 341cdaa77244: Pulling fs layer",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-27",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.049839825Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: da0c1f0040a3: Waiting",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-28",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.049840903Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #0"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: bba8a7a402ca: Waiting",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-29",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.049841362Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #0"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: 341cdaa77244: Waiting",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-30",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.049993835Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #0"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: bce1c0b85d43: Verifying Checksum",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-31",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.153455723Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: bce1c0b85d43: Download complete",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-32",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.153467291Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #0"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: 34dceaf65b1a: Verifying Checksum",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-33",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.399963933Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: 34dceaf65b1a: Download complete",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-34",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.399978860Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: 5cbc57c1ed03: Verifying Checksum",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-35",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.399980797Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #0"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: 5cbc57c1ed03: Download complete",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-36",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.399981191Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:25.555168963Z"
+  },
+  {
+    "textPayload": "Step #0: 341cdaa77244: Verifying Checksum",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-37",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.590330231Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:26.566873403Z"
+  },
+  {
+    "textPayload": "Step #0: 341cdaa77244: Download complete",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-38",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:25.590352793Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #0"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:26.566873403Z"
+  },
+  {
+    "textPayload": "Step #0: bba8a7a402ca: Verifying Checksum",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-39",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:26.818145182Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:27.551497811Z"
+  },
+  {
+    "textPayload": "Step #0: bba8a7a402ca: Download complete",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-40",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:26.818195964Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:27.551497811Z"
+  },
+  {
+    "textPayload": "Step #0: 5cbc57c1ed03: Pull complete",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-41",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:27.073593155Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #0"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:27.551497811Z"
+  },
+  {
+    "textPayload": "Step #0: 34dceaf65b1a: Pull complete",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-42",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:28.215571815Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:28.554484563Z"
+  },
+  {
+    "textPayload": "Step #0: bce1c0b85d43: Pull complete",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-43",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:28.344589520Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:28.554484563Z"
+  },
+  {
+    "textPayload": "Step #0: da0c1f0040a3: Verifying Checksum",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-44",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:36.635080316Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #0"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:37.552460195Z"
+  },
+  {
+    "textPayload": "Step #0: da0c1f0040a3: Download complete",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-45",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:32:36.635280065Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:32:37.552460195Z"
+  },
+  {
+    "textPayload": "Step #0: da0c1f0040a3: Pull complete",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-46",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:23.881544245Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:24.553227932Z"
+  },
+  {
+    "textPayload": "Step #0: bba8a7a402ca: Pull complete",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-47",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:28.308866044Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #0"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:28.556057295Z"
+  },
+  {
+    "textPayload": "Step #0: 341cdaa77244: Pull complete",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-48",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:28.450664523Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:28.556057295Z"
+  },
+  {
+    "textPayload": "Step #0: Digest: sha256:5a77b9f8fc712f6ea5463fc41ddc1070cda9dc70c82d032ce789922957653f4e",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-49",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:28.464970936Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #0"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:28.556057295Z"
+  },
+  {
+    "textPayload": "Step #0: Status: Downloaded newer image for gcr.io/google.com/cloudsdktool/cloud-sdk:latest",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-50",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:28.490720106Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:28.556057295Z"
+  },
+  {
+    "textPayload": "Step #0: gcr.io/google.com/cloudsdktool/cloud-sdk:latest",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-51",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:28.490736256Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:28.556057295Z"
+  },
+  {
+    "textPayload": "Step #0: downloading sshkey from gcs",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-52",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:31.164069440Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:31.555121275Z"
+  },
+  {
+    "textPayload": "Step #0: Copying gs://gcs-onedataraw-sdds-dv/dq/SPMENA/ssh-keys/id_ed25519...",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-53",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:33.326944365Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #0"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:33.553942341Z"
+  },
+  {
+    "textPayload": "Step #0: / [0 files][    0.0 B/  366.0 B]                                                \r-\r- [1 files][  366.0 B/  366.0 B]                                                \r",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-54",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:34.193218785Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:34.551464675Z"
+  },
+  {
+    "textPayload": "Step #0: Operation completed over 1 objects/366.0 B.                                      ",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-55",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:34.193240391Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #0",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:34.551464675Z"
+  },
+  {
+    "textPayload": "Finished Step #0",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-56",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:34.668272447Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "MAIN",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:35.569661869Z"
+  },
+  {
+    "textPayload": "Starting Step #1",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-57",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:34.668362953Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "MAIN"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:35.569661869Z"
+  },
+  {
+    "textPayload": "Step #1: Already have image (with digest): gcr.io/google.com/cloudsdktool/cloud-sdk",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-58",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:34.669662260Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #1"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:35.569661869Z"
+  },
+  {
+    "textPayload": "Step #1: setting up ssh-key for git",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-59",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:35.092485671Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #1"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:35.569661869Z"
+  },
+  {
+    "textPayload": "Step #1: # github.com:22 SSH-2.0-159e461a3",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-60",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:35.170781220Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #1"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:35.569661869Z"
+  },
+  {
+    "textPayload": "Step #1: host verification completed",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-61",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:35.295023171Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #1",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:35.569661869Z"
+  },
+  {
+    "textPayload": "Finished Step #1",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-62",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:35.492938945Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "MAIN"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:35.569661869Z"
+  },
+  {
+    "textPayload": "Starting Step #2",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-63",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:35.493024032Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "MAIN",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:35.569661869Z"
+  },
+  {
+    "textPayload": "Step #2: Pulling image: alpine/git",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-64",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:35.493646039Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #2",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:35.569661869Z"
+  },
+  {
+    "textPayload": "Step #2: Using default tag: latest",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-65",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:35.884135550Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #2"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:36.550339761Z"
+  },
+  {
+    "textPayload": "Step #2: latest: Pulling from alpine/git",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-66",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:36.573529443Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #2",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:37.553472233Z"
+  },
+  {
+    "textPayload": "Step #2: 38a8310d387e: Already exists",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-67",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:36.778035470Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #2",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:37.553472233Z"
+  },
+  {
+    "textPayload": "Step #2: 1b2182dafcd1: Pulling fs layer",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-68",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:36.787226122Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #2"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:37.553472233Z"
+  },
+  {
+    "textPayload": "Step #2: 486a52a85c5a: Pulling fs layer",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-69",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:36.787235438Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #2",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:37.553472233Z"
+  },
+  {
+    "textPayload": "Step #2: 486a52a85c5a: Download complete",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-70",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:36.970715795Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #2",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:37.553472233Z"
+  },
+  {
+    "textPayload": "Step #2: 1b2182dafcd1: Verifying Checksum",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-71",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:37.364385224Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #2"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:37.553472233Z"
+  },
+  {
+    "textPayload": "Step #2: 1b2182dafcd1: Download complete",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-72",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:37.364398208Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #2",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:37.553472233Z"
+  },
+  {
+    "textPayload": "Step #2: 1b2182dafcd1: Pull complete",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-73",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:38.797008343Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #2"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:39.550709263Z"
+  },
+  {
+    "textPayload": "Step #2: 486a52a85c5a: Pull complete",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-74",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:38.866754560Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #2"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:39.550709263Z"
+  },
+  {
+    "textPayload": "Step #2: Digest: sha256:39ac44ff6c6f659ee55eedd221a6b7e4cdfcf9d17ea2be024f588c3ddcd3ce7d",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-75",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:38.878699890Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #2"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:39.550709263Z"
+  },
+  {
+    "textPayload": "Step #2: Status: Downloaded newer image for alpine/git:latest",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-76",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:38.884293871Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #2",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:39.550709263Z"
+  },
+  {
+    "textPayload": "Step #2: docker.io/alpine/git:latest",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-77",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:38.888843063Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #2",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:39.550709263Z"
+  },
+  {
+    "textPayload": "Step #2: cloning the github repo",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-78",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:39.798490007Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #2",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:40.270253067Z"
+  },
+  {
+    "textPayload": "Step #2: Cloning into 'myrepo'...",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-79",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:39.802299983Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "Step #2"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:40.270253067Z"
+  },
+  {
+    "textPayload": "Step #2: Host key verification failed.\r",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-80",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:39.948530633Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #2",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:40.270253067Z"
+  },
+  {
+    "textPayload": "Step #2: fatal: Could not read from remote repository.",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-81",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:39.949064625Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #2",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:40.270253067Z"
+  },
+  {
+    "textPayload": "Step #2: ",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-82",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:39.949070855Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #2",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:40.270253067Z"
+  },
+  {
+    "textPayload": "Step #2: Please make sure you have the correct access rights",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-83",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:39.949072134Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #2",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:40.270253067Z"
+  },
+  {
+    "textPayload": "Step #2: and the repository exists.",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-84",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:39.949073053Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "Step #2",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:40.270253067Z"
+  },
+  {
+    "textPayload": "Finished Step #2",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-85",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:40.149414989Z",
+    "severity": "INFO",
+    "labels": {
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904",
+      "build_step": "MAIN"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:40.270253067Z"
+  },
+  {
+    "textPayload": "ERROR",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-86",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv",
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:40.149511436Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "MAIN",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:40.270253067Z"
+  },
+  {
+    "textPayload": "ERROR: build step 2 \"alpine/git\" failed: step exited with non-zero status: 128",
+    "insertId": "a99d785e-50cf-42f1-b451-6891a47b144a-87",
+    "resource": {
+      "type": "build",
+      "labels": {
+        "build_id": "a99d785e-50cf-42f1-b451-6891a47b144a",
+        "build_trigger_id": "9b339a5c-d7bf-4622-897b-3b2193463904",
+        "project_id": "spmena-onedataraw-dna-apac-dv"
+      }
+    },
+    "timestamp": "2024-12-18T05:33:40.149632658Z",
+    "severity": "INFO",
+    "labels": {
+      "build_step": "MAIN",
+      "build_tags": "trigger-9b339a5c-d7bf-4622-897b-3b2193463904"
+    },
+    "logName": "projects/spmena-onedataraw-dna-apac-dv/logs/cloudbuild",
+    "receiveTimestamp": "2024-12-18T05:33:40.270253067Z"
+  }
+]
