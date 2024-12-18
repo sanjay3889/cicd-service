@@ -1,0 +1,50 @@
+steps:
+  # Step 1: Download SSH key from GCS
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        echo 'Downloading SSH key from GCS...'
+        mkdir -p ~/.ssh
+        gsutil cp gs://gcs-onedataraw-sdds-dv/dq/SPMENA/ssh-keys/id_ed25519 ~/.ssh/id_ed25519
+        chmod 600 ~/.ssh/id_ed25519
+        echo 'SSH key downloaded.'
+
+  # Step 2: Configure SSH for GitHub
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        echo 'Configuring SSH for GitHub...'
+        ssh-keyscan github.com > ~/.ssh/known_hosts
+        chmod 644 ~/.ssh/known_hosts
+        echo 'Host key verification completed.'
+
+  # Step 3: Clone the GitHub repository
+  - name: 'alpine/git'
+    entrypoint: 'sh'
+    args:
+      - '-c'
+      - |
+        echo 'Cloning the GitHub repository...'
+        GIT_SSH_COMMAND="ssh -i ~/.ssh/id_ed25519 -o UserKnownHostsFile=~/.ssh/known_hosts" \
+        git clone git@github.com:apmena-data-analytics/spmena-data-quality-framework.git -b temp001 myrepo
+
+  # Step 4: Execute SQL script in BigQuery
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        PROJECT_ID="${_PROJECT_ID}"
+        if [ -z "$PROJECT_ID" ]; then
+          echo "Error: PROJECT_ID is required."
+          exit 1
+        fi
+        echo "Executing BigQuery SQL script in project: $PROJECT_ID"
+        bq query --use_legacy_sql=false --project_id="$PROJECT_ID" --format=none < myrepo/tempCICD/missing.sql
+
+options:
+  logging: CLOUD_LOGGING_ONLY
