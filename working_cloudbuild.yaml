@@ -1,0 +1,22 @@
+steps:
+
+  # Copying the email/smtp config file to the bucket:
+  # - name: 'gcr.io/cloud-builders/gsutil'
+  #   entrypoint: 'bash'
+  #   id:
+  #   args:
+  #   - '-c'
+  #   - |
+  #     gsutil cp tempCICD/missing.sql gs://gcs-onedataraw-sdds-dv/testing/
+  #     gsutil cp tempCICD/cldbld.yaml gs://gcs-onedataraw-sdds-dv/testing/
+
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'bash'
+    args:
+    - '-c'
+    - |
+      echo 'Deploying view into BigQuery...'
+      bq query --use_legacy_sql=false --project_id="${_PROJECT_ID}" --format=none < tempCICD/missing.sql
+
+options:
+  logging: CLOUD_LOGGING_ONLY
