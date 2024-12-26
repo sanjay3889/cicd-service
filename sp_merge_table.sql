@@ -1,8 +1,9 @@
 BEGIN
--- EXECUTE IMMEDIATE 
-create or replace table `oa-apmena-itdelivery-sp-np.Test_dataset.vw_dynamic_result`
-partition by range_bucket(year, generate_array(2021,2025))
-cluster by market_code, division_code, point_of_sale_code, month
+
+DECLARE current_ts TIMESTAMP;
+SET current_ts = CURRENT_TIMESTAMP();
+
+create temp table temp_results
  AS
 with vw_fact_sellout as (
     SELECT DISTINCT 
@@ -336,19 +337,19 @@ available_monthly_data AS (
 
 --calculating missing data
 daily_missing_data as (
-    SELECT mrk.market_code
-         , mrk.division_code
-         , mrk.point_of_sale_code
-         , mrk.client_name
-         , mrk.source_project
-         , mrk.year
-         , mrk.month
-         , mrk.channel_level1
-         , mrk.channel_level2
-         , mrk.data_source_frequency
-         , array_length(array( select 1 from unnest(mrk.expected_array) a 
+    SELECT exp.market_code
+         , exp.division_code
+         , exp.point_of_sale_code
+         , exp.client_name
+         , exp.source_project
+         , exp.year
+         , exp.month
+         , exp.channel_level1
+         , exp.channel_level2
+         , exp.data_source_frequency
+         , array_length(array( select 1 from unnest(exp.expected_array) a 
                                where a not in (select b from unnest(fct.available_array) b) )) missing_file_count
-      FROM expected_daily_data as mrk
+      FROM expected_daily_data as exp
       LEFT
       JOIN available_daily_data as fct
      USING ( division_code, point_of_sale_code, year, month, source_project, client_name ) 
@@ -356,19 +357,19 @@ daily_missing_data as (
 ),
 
 weekly_missing_data as (
-    SELECT mrk.market_code
-         , mrk.division_code
-         , mrk.point_of_sale_code
-         , mrk.client_name
-         , mrk.source_project
-         , mrk.year
-         , mrk.month
-         , mrk.channel_level1
-         , mrk.channel_level2
-         , mrk.data_source_frequency
-         , array_length(array( select 1 from unnest(mrk.expected_array) a 
+    SELECT exp.market_code
+         , exp.division_code
+         , exp.point_of_sale_code
+         , exp.client_name
+         , exp.source_project
+         , exp.year
+         , exp.month
+         , exp.channel_level1
+         , exp.channel_level2
+         , exp.data_source_frequency
+         , array_length(array( select 1 from unnest(exp.expected_array) a 
                                where a not in (select b from unnest(fct.available_array) b) )) missing_file_count
-     FROM expected_weekly_data  as mrk
+     FROM expected_weekly_data  as exp
      LEFT
      JOIN (select * from available_weekly_data) as fct
     USING (division_code, point_of_sale_code, year, month,  source_project, client_name)
@@ -376,18 +377,18 @@ weekly_missing_data as (
 ),
 
 monthly_missing_data as (
-    SELECT mrk.market_code
-         , mrk.division_code
-         , mrk.point_of_sale_code
-         , mrk.client_name
-         , mrk.source_project
-         , mrk.year
-         , mrk.month
-         , mrk.channel_level1
-         , mrk.channel_level2
-         , mrk.data_source_frequency
-         , (COUNT(mrk.source_project) - COUNT(fct.source_project)) AS missing_file_count
-      FROM expected_monthly_data as mrk
+    SELECT exp.market_code
+         , exp.division_code
+         , exp.point_of_sale_code
+         , exp.client_name
+         , exp.source_project
+         , exp.year
+         , exp.month
+         , exp.channel_level1
+         , exp.channel_level2
+         , exp.data_source_frequency
+         , (COUNT(exp.source_project) - COUNT(fct.source_project)) AS missing_file_count
+      FROM expected_monthly_data as exp
       LEFT
       JOIN available_monthly_data as fct
      USING (division_code, point_of_sale_code, year, month, source_project, client_name)
@@ -433,7 +434,10 @@ before_store_start_date as (
       FROM vw_dim_calendar as dim_cal
      CROSS
       JOIN market_dtl   as mrk     
-     WHERE dim_cal.cal_date < DATE_TRUNC(effective_store_start_date, month)
+     WHERE case when data_source_frequency in ('Daily', 'Monthly')
+                then cal_date < DATE_TRUNC(effective_store_start_date, month)
+                else cal_date < DATE_TRUNC(DATE_TRUNC(effective_store_start_date, week(monday)), MONTH)
+            end
 ),
 
 final as (
@@ -442,8 +446,29 @@ UNION ALL
 SELECT * FROM before_store_start_date
 )
 
-SELECT *  FROM final
--- ORDER BY missing_file desc, source_project, client_name, point_of_sale_code, division_code, year, month
-;
+SELECT * FROM final;
 
+
+-- EXECUTE IMMEDIATE """
+MERGE INTO `oa-apmena-itdelivery-sp-np.Test_dataset.vw_dynamic_result_merg` as target
+using temp_results as source
+on target.division_code = source.division_code
+and target.point_of_sale_code = source.point_of_sale_code
+and target.client_name = source.client_name
+and target.source_project = source.source_project
+and target.year = source.year
+and target.month = source.month
+
+when matched AND (target.missing_file_count != source.missing_file_count OR target.missing_file != source.missing_file) then
+update set target.missing_file_count = source.missing_file_count,
+           target.missing_file = source.missing_file,
+           target.last_updated_timestamp= current_ts
+when not matched then
+insert (market_code, division_code, point_of_sale_code, client_name, source_project, year, month, channel_level1, channel_level2, data_source_frequency, missing_file_count, missing_file, last_updated_timestamp)
+values (market_code, division_code, point_of_sale_code, client_name, source_project, year, month, channel_level1, channel_level2, data_source_frequency, missing_file_count, missing_file, current_ts)
+-- """;
+;
+UPDATE `oa-apmena-itdelivery-sp-np.Test_dataset.vw_dynamic_result_merg`
+  SET last_invoked_timestamp = current_ts
+  WHERE TRUE;
 END
